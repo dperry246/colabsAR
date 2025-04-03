@@ -15,17 +15,17 @@
       let WIFI_NAME = "MyNetworkName";
 
       // Animate the avatar into view.
-      const showAvatar = () => {
-        const avatar = document.querySelector("#avatar");
-        let z = -0.3;
-        const intervalId = setInterval(() => {
-          z += 0.008;
-          avatar.setAttribute("position", `0 -0.25 ${z}`);
-          if (z >= 0.3) {
-            clearInterval(intervalId);
-          }
-        }, 10);
-      };
+      // const showAvatar = () => {
+      //   const avatar = document.querySelector("#avatar");
+      //   let z = -0.3;
+      //   const intervalId = setInterval(() => {
+      //     z += 0.008;
+      //     avatar.setAttribute("position", `0 -0.25 ${z}`);
+      //     if (z >= 0.3) {
+      //       clearInterval(intervalId);
+      //     }
+      //   }, 10);
+      // };
 
       // AR target component: when the target is found, show the background and animate the avatar.
       AFRAME.registerComponent("mytarget", {
